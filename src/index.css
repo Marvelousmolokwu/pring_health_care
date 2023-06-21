@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500;600;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-purple2 font-text1;
+  }
+  li {
+    @apply bg-purple3 w-full lg:w-fit py-2  text-purple1 hover:bg-purple2 hover:text-purple3 lg:hover:bg-purple3 lg:hover:text-purple2;
+  }
+  .inner__li {
+  }
+  .inner__li li {
+    @apply py-2 px-2  lg:text-sm lg:w-full;
+  }
+}
