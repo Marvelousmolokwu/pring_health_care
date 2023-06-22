@@ -2,14 +2,16 @@ import { useState } from "react";
 
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseSharpIcon from "@mui/icons-material/CloseSharp";
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
+import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 
 const Header = () => {
   const [showservice, setShowservice] = useState(false);
   const [menu, setMenu] = useState(false);
   return (
     <>
-      <header className="lg:flex lg:justify-between  bg-purple3 lg:items-center lg:drop-shadow-sm ">
-        <div className=" bg-purple3 drop-shadow-sm lg:drop-shadow-none flex gap-4 items-center px-8 py-3">
+      <header className="lg:flex lg:justify-between  bg-purple3 lg:items-center lg:drop-shadow-sm top-0 fixed z-40 left-0 right-0  ">
+        <div className=" bg-purple3 drop-shadow-sm lg:drop-shadow-none flex gap-4 items-center px-8 py-5">
           <img
             src="https://res.cloudinary.com/ddgyd8szc/image/upload/v1687375510/therapy_2_st9jvt.png"
             alt=""
@@ -33,9 +35,25 @@ const Header = () => {
             }}
           >
             {menu ? (
-              <CloseSharpIcon style={{ color: "#f5e9ee" }} size="small" />
+              <CloseSharpIcon
+                size="small"
+                sx={{
+                  color: "#f5e9ee",
+                  "&:hover": {
+                    color: "#ad6989",
+                  },
+                }}
+              />
             ) : (
-              <MenuIcon style={{ color: "#f5e9ee" }} size="small" />
+              <MenuIcon
+                sx={{
+                  color: "#f5e9ee",
+                  "&:hover": {
+                    color: "#ad6989",
+                  },
+                }}
+                size="small"
+              />
             )}
           </button>
         </div>
@@ -66,10 +84,15 @@ const Header = () => {
                 }}
               >
                 services
+                {showservice ? (
+                  <KeyboardArrowUpIcon />
+                ) : (
+                  <KeyboardArrowDownIcon />
+                )}
               </button>
               <div className="lg:absolute lg:w-52">
                 <ul
-                  className={` lg:text-left inner__li lg:mt-3  ${
+                  className={`  lg:text-left inner__li lg:mt-3  ${
                     showservice ? "lg:block" : "lg:hidden"
                   }`}
                 >

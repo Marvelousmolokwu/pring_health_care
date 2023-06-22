@@ -12,7 +12,7 @@ export default {
       xl: "1500px",
     },
     backgroundImage: {
-      bg1: "url(https://res.cloudinary.com/ddgyd8szc/image/upload/v1687243898/photo-1522968941782-e27ac665baa3_cwps9w.avif)",
+      bg1: "url(https://res.cloudinary.com/ddgyd8szc/image/upload/v1687383537/woman-5380651_eh7psp.jpg)",
     },
     extend: {
       colors: {
@@ -21,7 +21,9 @@ export default {
         purple1: "#562349",
         purple2: "#ad6989",
         purple3: "#f5e9ee",
+        purple4: "#421136",
         cream: "#fee2b3",
+        cream1: "rgba(173, 105, 137, 0.5)",
       },
       transitionProperty: {
         height: "height",
