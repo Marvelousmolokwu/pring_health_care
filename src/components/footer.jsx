@@ -3,8 +3,8 @@ import Button from "../components/button";
 const Footer = () => {
   return (
     <>
-      <footer className="relative  flex flex-col justify-center text-center  items-center bottom-0 left-0 right-0  ">
-        <section className="bg-purple1 text-purple3  py-10 w-full lg:flex lg:justify-between lg:px-9  ">
+      <footer className="relative flex flex-col justify-center text-center  items-center bottom-0 left-0 right-0  ">
+        <section className="bg-purple1 text-purple3  py-6 w-full lg:flex lg:justify-between lg:px-9  ">
           <div className="  drop-shadow-sm lg:drop-shadow-none flex gap-4 justify-center max-w-[80%] mx-auto lg:m-0 ">
             <img
               src="https://res.cloudinary.com/ddgyd8szc/image/upload/v1687440073/therapy_3_eiigs0.png"
@@ -42,7 +42,7 @@ const Footer = () => {
 
           <Button />
         </section>
-        <section className="bg-purple4 w-full text-purple3 font-thin text-sm pt-8 pb-3 ">
+        <section className="bg-purple4 w-full text-purple3 font-thin text-sm pt-4 pb-3 ">
           <p>
             <span className="hover:text-cream px-2">
               <a href="">+12366388333</a>
