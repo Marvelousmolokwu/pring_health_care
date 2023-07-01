@@ -23,8 +23,8 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div>
-            <ul className="footer--links flex  py-2 lg:gap-6 ">
+          <div className="flex justify-center lg:justify-between ">
+            <ul className="footer--links flex  py-2 w-1/2 gap-2 lg:gap-6  ">
               <li>
                 <a href="">Home</a>
               </li>

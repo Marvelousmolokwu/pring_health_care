@@ -18,7 +18,9 @@
   .footer--links li {
     @apply bg-purple1 text-purple3 hover:text-cream;
   }
-  p {
-    @apply font-thin;
+  input,
+  textarea,
+  select {
+    @apply outline outline-1 indent-2 py-1 rounded-sm outline-gray-200 hover:outline-2 hover:outline-purple2 font-thin;
   }
 }

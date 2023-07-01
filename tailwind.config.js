@@ -37,6 +37,9 @@ export default {
       width: {
         "10.5rem": "10.5rem",
       },
+      fontSize: {
+        sm: "1rem",
+      },
     },
   },
   plugins: [],
